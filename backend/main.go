@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"log"
 	"net/http"
 )
 
@@ -26,5 +27,6 @@ func main() {
 	http.HandleFunc("/message", getMessage)
 	http.HandleFunc("/message/set", setMessage)
 
+	log.Println("Starting server")
 	http.ListenAndServe(":8080", nil)
 }
