@@ -1,0 +1,7 @@
+plugins {
+    id "antyzero.base"
+}
+
+dependencies {
+    // shared between Java only and Android
+}
